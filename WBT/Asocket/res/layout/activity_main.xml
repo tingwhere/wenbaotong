@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ivory"
+    android:foreground="@color/black">
+<!--     android:orientation="horizontal"  -->
+<!--      android:layout_width="fill_parent"   -->
+<!--      android:layout_height="wrap_content"> -->
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="输入服务器IP" />
+
+
+   <EditText 
+        android:id="@+id/ed_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="61.183.113.230"
+        /> 
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/style_btn_shape"
+        android:layout_margin="5dip"
+        android:text="连接服务器" 
+        android:textColor="@color/white"/>
+
+
+    <Button
+        android:id="@+id/btn_sent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/style_btn_shape"
+        android:layout_margin="5dip"
+        android:text="注册" 
+        android:textColor="@color/white"/>
+    
+
+     <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textColor="@color/black" />
+
+     <Button 
+        android:id="@+id/mems_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:background="@drawable/style_btn_shape"
+        android:layout_margin="5dip"
+        android:text="查询仪器" 
+        android:textColor="@color/white"
+        />
+
+     <TextView
+        android:id="@+id/mems_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="None equipment"
+        android:textColor="@color/black" />
+ 
+     <ListView
+         android:id="@+id/mylist"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1.0"
+         android:textColor="@color/black" >
+     </ListView>
+
+</LinearLayout>
